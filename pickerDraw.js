@@ -1,11 +1,36 @@
-/**********************************  Start of the Color Wheel ************************************/
 
+
+
+/**********************************  Start of the Color Wheel ************************************/
 const colorPicker = new iro.ColorPicker(".colorPicker", {
     width: 280,
     color: "#ffffff",
     borderWidth: 1,
-    borderColor: "#fff",
-    margin: 50,
+    borderColor: "white",
+    margin: 25,
+    layout: [
+      {
+        component: iro.ui.Wheel
+      },
+      {
+        component: iro.ui.Slider,
+        options: {
+          sliderType: 'saturation'
+        }
+      },
+      {
+        component: iro.ui.Slider,
+        options: {
+          sliderType: 'value'
+        }
+      },
+      {
+        component: iro.ui.Slider,
+        options: {
+          sliderType: 'kelvin'
+        }
+      }
+    ]
   });
 
 const values = document.getElementById("values");
@@ -31,8 +56,8 @@ const ctx = canvas.getContext('2d');
  
 const sketch = document.getElementById('sketch');
 const sketch_style = getComputedStyle(sketch);
-canvas.width = 500;
-canvas.height = 250;
+canvas.width = 1500;
+canvas.height = 783;
 
 const mouse = {x: 0, y: 0};
  
@@ -43,8 +68,10 @@ canvas.addEventListener('mousemove', function(e) {
 }, false);
 
 /* Drawing on Paint App */
+
+function getCap(cap){ctx.lineCap = cap}
 ctx.lineJoin = 'round';
-ctx.lineCap = 'round';
+ctx.lineCap = 'butt';
 
 ctx.strokeStyle = hexInput.value;
 function getColor(colour){ctx.strokeStyle = colour;}

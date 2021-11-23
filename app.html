@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+    <link rel="stylesheet" href="appStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Paint Application</title>
+</head>
+<body>
+    <main class="content">
+        <section class="logo">
+            <h1>
+                <a href="landingpage.html">Scrib.</a>
+            </h1>
+        </section>
+        <div class="container1">
+            <div id="sketch">
+                <canvas id="paint"></canvas>
+                
+                <!-- <button id="styleSelector" onclick="getCap()">Change the cap on the line to Round! </button> -->
+            </div>
+            <div class="wrap">
+                <div class="half">
+                    <span class="title">Selected Color:</span>
+                    <div id="values"></div>
+                    <input id="hexInput"></input>
+                    <div class="colorPicker"></div>
+                    <button id="resetWheel" onClick="resetWheel()">Reset the wheel!</button>
+                    <button id="resetCanvas" onclick="resetCanvas()">Reset your drawing!</button>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="/pickerDraw.js"></script>
+
+</body>
+</html>
