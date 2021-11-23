@@ -55,6 +55,10 @@ const canvas = document.getElementById('paint');
 const ctx = canvas.getContext('2d');
 //const slider = document.getElementsById('mySlider');
 //const brushSize = slider.value;
+canvas.width = 1100;
+canvas.height = 500;
+
+
 
 const sketch = document.getElementById('sketch');
 const sketch_style = getComputedStyle(sketch);
