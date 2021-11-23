@@ -24,7 +24,7 @@ body {
   
   .wrap {
     max-width: 720px;
-    margin-top: -100px;
+    margin-top: -57px;
     margin-left: auto;
     margin-right: 200px;
     display: flex;
@@ -78,7 +78,7 @@ body {
 /**********************************  Start of the Canvas ****************************************/
 
 #paint {
-  border: 5px solid #66fcf1; 
+  border: 3px solid #66fcf1; 
   border-radius: 5px;
   background : #1f2833; 
   margin-left: auto;
@@ -123,8 +123,8 @@ body {
 }
 
 #paint {
-  width: 1100px;
-  height: 600px;
+  width: 1400px;
+  height: 800px;
 }
 
 @media (max-width: 1440px) {
