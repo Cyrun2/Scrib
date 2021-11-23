@@ -3,7 +3,7 @@
 
 /**********************************  Start of the Color Wheel ************************************/
 const colorPicker = new iro.ColorPicker(".colorPicker", {
-    width: 280,
+    width: 200,
     color: "#ffffff",
     borderWidth: 1,
     borderColor: "white",
@@ -53,11 +53,11 @@ function resetWheel() {
 
 const canvas = document.getElementById('paint');
 const ctx = canvas.getContext('2d');
- 
+//const slider = document.getElementsById('mySlider');
+//const brushSize = slider.value;
+
 const sketch = document.getElementById('sketch');
 const sketch_style = getComputedStyle(sketch);
-canvas.width = 1500;
-canvas.height = 783;
 
 const mouse = {x: 0, y: 0};
  

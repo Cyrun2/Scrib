@@ -60,7 +60,7 @@
       /* text-decoration: none; */
   }
   
-  button:hover, #footLink:hover {
+  button:hover, #footLink:hover, .buttonLink:hover {
       background-color: #66fcf1;
       color: #1F2833;
   }
