@@ -17,6 +17,12 @@ body {
   margin-top: -75px;
 }
 
+.container1 {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+}
+
 .content {
   margin-top: 100px;
   margin-left: 25px;
@@ -26,11 +32,10 @@ body {
   max-width: 720px;
   margin-top: -57px;
   margin-left: 100px;
-  margin-right: 200px;
-  display: flex;
-  flex-direction: row;
+  /* display: flex; */
+  /* flex-direction: row; */
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 #resetWheel {
@@ -45,7 +50,6 @@ body {
   color: #66fcf1;
   padding-bottom: 4px;
   margin: 25px 0px;
-  margin-left: 13px;
 }
 
 .half {
@@ -80,13 +84,16 @@ body {
   border: 3px solid #66fcf1;
   border-radius: 5px;
   background: #1f2833;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+  /* height: 1200px; */
+  /* width: 500px; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* display: block; */
 }
 
 .container1 {
   display: flex;
+  justify-content: center;
 }
 
 #resetCanvas {
@@ -100,8 +107,6 @@ body {
   border-radius: 20px;
   color: #66fcf1;
   padding-bottom: 2px;
-  /* text-decoration: none; */
-  margin-left: 13px;
 }
 
 #resetCanvas:hover,
@@ -122,22 +127,24 @@ a {
   text-decoration: none;
   color: #66fcf1;
 }
+ 
+/* @media (max-width: 1280px) {
+  .logo {
+    margin-left: 30px;
+  } 
+} */
 
-/* #paint {
-    width: 1400px;
-    height: 800px;
+/* 13" LAPTOP */
+@media (min-width: 1280px) and (max-width:1440px) {
+  .logo {
+    margin-left: 2rem;
+  } 
+}
+
+/* 24" & 27" Monitor */
+@media (min-width: 1440px) and (max-width: 1920px){
+  .logo{
+    margin-left: 22rem;
   }
-  
-  /* @media (max-width: 1440px) {
-    #paint {
-      width: 1100px;
-      height: 500px; 
-    }
-  }
-  
-  @media (max-width: 1280px) {
-    #paint {
-      width: 900px;
-      height: 550px;
-    }
-  } */
+}
+
