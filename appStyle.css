@@ -141,8 +141,15 @@ a {
   } 
 }
 
+/* 15" LAPTOP */
+@media (min-width: 1440px) and (max-width:1640px) {
+  .logo {
+    margin-left: 10rem;
+  } 
+}
+
 /* 24" & 27" Monitor */
-@media (min-width: 1440px) and (max-width: 1920px){
+@media (min-width: 1640px) and (max-width: 1920px){
   .logo{
     margin-left: 22rem;
   }
