@@ -266,7 +266,7 @@
     margin-right: -130px;
   }
   
-  @media (max-width: 1280px) {
+  @media (max-width: 1440px) {
     .row1, .row2 {
       flex-direction: column;
     }
